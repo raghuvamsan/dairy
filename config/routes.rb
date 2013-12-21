@@ -6,6 +6,7 @@ Dairy::Application.routes.draw do
   # You can have the root of your site routed with "root"
   resources :dairys
    root 'dairys#new'
+   
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

@@ -1,7 +1,8 @@
-<%= form_for :dairy do |f| %>
+<%= form_for(@dairy, url: dairys_path) do |f| %>
  
   <p>
     <%= f.text_area :text %>
+    <%= f.hidden_field :timestamp, value: Time.now.to_s %>
   </p>
  
   <p>
