@@ -1,0 +1,10 @@
+<%= form_for :dairy_posts, url: dairy_path(@dairy_posts), method: :patch do |e| %>
+	<p>
+		<%= e.text_area :text %>
+	</p>
+	
+	<p>
+		<%= e.submit %>
+<% end %>
+<br><br>
+<p><%= link_to 'Back', dairys_path %></p>

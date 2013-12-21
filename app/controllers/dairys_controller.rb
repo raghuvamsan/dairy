@@ -6,4 +6,8 @@ class DairysController < ApplicationController
 	def show
 		@dairy_posts = DairyApp.find(params[:id])
 	end
+	
+	def edit
+		@dairy_posts = DairyApp.find(params[:id])
+	end
 end
