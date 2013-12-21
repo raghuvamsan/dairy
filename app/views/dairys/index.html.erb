@@ -1,0 +1,15 @@
+<%= link_to 'Write Post', new_dairy_path %><br><br>
+
+<table>
+<% @dairy_posts.each do |entry| %>
+<tr>
+<td><%= entry.id %> </td>
+<td><%= entry.timestamp %> </td>
+<td><%= entry.text %> </td>
+<td><%= link_to 'Show', dairy_path(entry) %> </td>
+<td><%= link_to 'Edit', edit_dairy_path(entry) %> </td>
+<td><%= link_to 'Destroy', dairy_path(entry), method: :delete, data: 
+{ confirm: 'Are you sure?' } %> </td>
+<% end %>
+</tr>
+</table>
